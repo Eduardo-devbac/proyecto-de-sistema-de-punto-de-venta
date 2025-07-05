@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta</title>
+    <script src="../javascript/datos.js"defer></script>
+    <script src="../javascript/venta.js"></script>
+</head>
+<body>
+    <h1>Venta</h1>
+    <menu> 
+      <a href="../html/provedores.html">provedores</a>
+      <a href="../html/inventario.html">inventario</a>
+      <a href="../html/venta.html">venta</a>
+    </menu>
+
+    <section>
+     <table border="1">
+        <thead>
+             <tr>
+              <th>Código de Barras</th>
+              <th>Nombre</th>
+              <th>Precio Venta</th>
+              <th>Cant.</th>
+              <th>Importe</th>
+            </tr>
+        </thead>
+        <tbody id="carritobody">
+         <input type="text" placeholder="ingresa el codigo de barras del producto" id="codigo">
+         <button onclick="Carrito()"></button>
+        </tbody>
+     </table>
+
+     <button>Pagar</button>
+    </section>
+    
+</body>
+</html>
