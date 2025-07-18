@@ -15,24 +15,36 @@
       <a href="../html/venta.html">venta</a>
     </menu>
 
-    <section>
-     <table border="1">
+    <section class="seccion" id="seccion">
+      <h1 id="nombretienda">ABARROTES LOS POLLOS HERMANOS FAMILY</h1>
+      <input type="text" placeholder="ingresa el codigo de barras del producto" id="codigo">
+      <button onclick="Carrito()">añadir productos</button>
+       <button onclick="calculo()" class="calcular" id="calcular">calcular</button>
+     <table border="1" class="table">
         <thead>
              <tr>
               <th>Código de Barras</th>
               <th>Nombre</th>
               <th>Precio Venta</th>
-              <th>Cant.</th>
               <th>Importe</th>
+              <th>Cant.</th>
             </tr>
         </thead>
-        <tbody id="carritobody">
-         <input type="text" placeholder="ingresa el codigo de barras del producto" id="codigo">
-         <button onclick="Carrito()"></button>
+        
+        <tbody id="carritobody" class="carritobody">
+         
         </tbody>
+       
      </table>
 
-     <button>Pagar</button>
+      <div id="zonaDinamica">
+        <p>Selecciona el metodo de pago:</p>
+        <button id="efectivo">Efectivo</button>
+        <button id="tarjeta">Tarjeta</button>
+
+      </div>
+
+     
     </section>
     
 </body>
