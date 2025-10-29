@@ -6,20 +6,23 @@
     <title>Venta</title>
     <script src="../javascript/datos.js"defer></script>
     <script src="../javascript/venta.js"></script>
+    <link rel="stylesheet" href="../CSS/venta.css">
 </head>
 <body>
     <h1>Venta</h1>
     <menu> 
-      <a href="../html/provedores.html">provedores</a>
+      <a href="../html/sesion.html">login</a>
       <a href="../html/inventario.html">inventario</a>
       <a href="../html/venta.html">venta</a>
     </menu>
+    <button type="button" id="cerrar-sesion">cerrar sesion</button>
 
     <section class="seccion" id="seccion">
-      <h1 id="nombretienda">ABARROTES LOS POLLOS HERMANOS FAMILY</h1>
+      <h1 id="nombretienda">ABARROTES JURADO</h1>
       <input type="text" placeholder="ingresa el codigo de barras del producto" id="codigo">
       <button onclick="Carrito()">añadir productos</button>
-       <button onclick="calculo()" class="calcular" id="calcular">calcular</button>
+      <button onclick="calculo()" class="calcular" id="calcular">calcular</button>
+      <button onclick="ticketvirtual()">Imprimir ticket</button>
      <table border="1" class="table">
         <thead>
              <tr>
@@ -41,6 +44,10 @@
         <p>Selecciona el metodo de pago:</p>
         <button id="efectivo">Efectivo</button>
         <button id="tarjeta">Tarjeta</button>
+
+        <section id="ticket">
+
+        </section>
 
       </div>
 
